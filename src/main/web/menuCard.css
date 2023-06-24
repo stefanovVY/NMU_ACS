@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Capture it";
+    src: url("fonts/Capture_it.woff");
+    font-weight: 100;
+}
+
+/*#myVideo {*/
+/*    display: none;*/
+/*}*/
+
+body, input {
+    font-family: "Capture it", Calibri, sans-serif;
+    letter-spacing: 0.2em;
+}
+
+h2 {
+    margin-left: 10px;
+}
+
+h3, p {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px;
+    color: whitesmoke;
+
+}
+
+h3 {
+    text-align: center;
+}
+
+
+.meal-breakfast {
+    text-align-all: center
+}
+
+.cards-container {
+    opacity: 1;
+    display: grid;
+    gap: 0.2rem;
+    grid-template-columns: repeat(1, 1fr);
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 15%;
+}
+
+
+.meal-info img {
+    display: none;
+}
+
+@media (min-width: 40em) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .meal-info img {
+        display: block;
+        padding: 2%;
+    }
+
+    .meal-info {
+        display: grid;
+        gap: 0.2rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (min-width: 80em) {
+    .cards-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /*#myVideo {*/
+    /*    display: grid;*/
+    /*    position: fixed;*/
+    /*    right: 0;*/
+    /*    bottom: 0;*/
+    /*    min-width: 100%;*/
+    /*    min-height: auto;*/
+    /*    z-index: -1;*/
+    /*}*/
+    .meal-info img {
+        display: block;
+        padding: 2%;
+    }
+}
+
+.card {
+    position: relative;
+    /*background-color: rgba(51, 51, 51, 30%);*/
+    gap: 0.2rem;
+
+}
+
+#menu-1 {
+    background-color: rgba(242, 242, 242, 50%);
+}
+
+#menu-2 {
+    background-color: rgba(66, 128, 0, 50%);
+}
+
+#menu-3 {
+    background-color: rgba(153, 0, 0, 50%);
+}
+
+/*.card:hover {*/
+/*    scale: 1.4;*/
+/*    z-index: 2;*/
+/*    !*transition: all 0.4s ease 0.2s;*!*/
+/*    transition: all .4s ease-in-out;*/
+/*    position: relative;*/
+/*}*/
+
+.meals-container {
+    opacity: 1;
+    display: grid;
+    /*gap: 0.2rem;*/
+    grid-template-rows: repeat(3, 1fr);
+
+}
+
+.meal-breakfast {
+    background-color: rgba(51, 51, 51, 90%);
+
+}
+
+.meal-lunch {
+    background-color: rgba(51, 51, 51, 90%);
+}
+
+.meal-dinner {
+    background-color: rgba(51, 51, 51, 90%);
+
+}
+
+.meal-info {
+    align-items: center
+}
+
+.card-buttons {
+    font-family: "Capture it", Calibri, sans-serif;
+    letter-spacing: 0.1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    margin: 10px
+}
+
+
+
+.months li {
+    list-style: none;
+}
+
+.days li {
+    list-style: none;
+}

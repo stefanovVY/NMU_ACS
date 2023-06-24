@@ -2,9 +2,61 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Page</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     </head>
     <body>
+        <header>
+            <nav class="nav-links">
 
+                <div class="grid-container">
+                    <a id="user" href="#"><i class="fa fa-user-circle-o my-icon" aria-hidden="true"></i>User</a>
+                    <a id="menu" href="menuCard.html" target="iframe_a"><i class="fa fa-cutlery my-icon" aria-hidden="true"></i>Menu</a>
+                    <a id="login" href="#"><i class="fa fa-sign-in my-icon" aria-hidden="true"></i>Login</a>
+                </div>
+
+
+                <div class="flex-container">
+                    <img class = "logo" src="ACSimages/logo_reduced.png" alt="Logo">
+                    <form class="right"
+                          id="nav-search" action="#" method="get">
+                        <label for="search-input"></label>
+                        <input type="search" name="search" id="search-input" placeholder="Search...">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </nav>
+        </header>
+
+
+
+        <iframe src="menuCard.html" name="iframe_a" title="Iframe Example"></iframe>
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer class="grid-container" id="footer">
+            <a class="left" href="#">
+                <i class="fa fa-address-card-o" aria-hidden="true"></i>
+                Contacts</a>
+            <small class="middle"> &copy; Copyright 2023
+            </small>
+            <a class="right" href="#">
+                <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+            </a>
+
+        </footer>
     </body>
 </html>
