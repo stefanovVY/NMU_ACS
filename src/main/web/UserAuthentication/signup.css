@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    background-color: black;
+    color: white;
+
+}
+
+.reg__form__header {
+    text-align: center;
+
+    /*background-color: rgba(83,51,51, 1%);*/
+    /*border-radius: 10px;*/
+
+}
+
+@font-face {
+    font-family: "Capture it";
+    src: url("../fonts/Capture_it.woff");
+}
+
+.reg__form__header h1 {
+    font-family: "Capture it", Helvetica, sans-serif;
+    color: white;
+
+    /*font-family: "MS Shell Dlg 2", Helvetica, sans-serif;*/
+    font-weight: 1;
+    font-size: 32px;
+}
+
+input[type="text"], [type="date"], [type="password"], [type="email"], [type="submit"], [type="reset"] {
+    border-style: solid;
+    border-radius: 10px;
+    /*border-color: rgba(83, 51, 51, 30%);*/
+}
+
+.form {
+    /*background-color: darkkhaki;*/
+    width: 30%;
+    height: auto;
+    font-family: "MS Shell Dlg 2", Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    /*border-style: solid;*/
+    /*border-radius: 30px;*/
+    /*border-color: rgba( 83,51,51, 30%);*/
+
+}
+
+.form #form__input {
+    /*background-color: cornflowerblue;*/
+}
+
+.form #form__military--category {
+    /*background-color: green;*/
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#category {
+    /*background-color: mediumpurple;*/
+    border-style: solid;
+    border-radius: 10px;
+    /*border-color: rgba(83, 51, 51, 30%);*/
+}
+
+.form #form__gender {
+    /*background-color: yellow;*/
+    /*border-style: solid;*/
+    /*border-radius: 10px;*/
+    /*border-color: rgba( 83,51,51, 30%);*/
+    /*border-width: 2px;*/
+    /*padding:15px;*/
+
+}
+
+#genders {
+    /*background-color: darkcyan;*/
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+#form__gender > label {
+    /*background-color: green;*/
+
+}
+
+
+#form__gender > input {
+
+
+    /*background-color: navajowhite;*/
+}
+
+.form #form__comments {
+    /*background-color: pink;*/
+    margin-top: 50px;
+    /*padding-top: 5px;*/
+    padding-bottom: 5px;
+}
+#form__comments textarea {
+    white-space: normal;
+}
+
+.form #form__buttons {
+    /*background-color: black;*/
+    justify-content: center;
+    font-weight: bold;
+}
+
+.form #form__text__comments {
+
+    resize: none;
+    height: 200px;
+    width: 100%;
+    padding: 5px 2px;
+    /*border: solid 1px #aacfe4;*/
+    margin: 2px 0 2px 1px;
+    border-style: solid;
+    border-radius: 10px;
+    /*border-color: rgba(83, 51, 51, 30%);*/
+}
+
+input {
+    display: block;
+    padding: 4px 2px;
+    border: solid 1px #aacfe4;
+    width: 100%;
+    margin: 2px 0 2px 1px;
+    height: 40px;
+
+}
+
+#form__buttons {
+    font-family: "MS Shell Dlg 2", Helvetica, sans-serif;
+    /*font-size: 14px;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
+
+
+.tooltip {
+    position: relative;
+    margin-left: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    display: inline-block;
+
+    /*border-bottom: 1px dotted black;*/
+    /*background-color: chocolate;*/
+}
+
+.tooltip .tooltip__text {
+    font-size: 0.8rem;
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 110%;
+    /*cursor: revert;*/
+}
+
+.tooltip .tooltip__text::after {
+    /*content: "";*/
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    /*border-style: solid;*/
+    /*border-color: transparent black transparent transparent;*/
+}
+
+.tooltip:hover .tooltip__text {
+    visibility: visible;
+}
+
+.info-class {
+    display: flex;
+}
+
+.sex__container {
+    display: flex;
+    float: left;
+    gap: 10px;
+    /*background-color: chocolate;*/
+}
+
+.sex__container label {
+    margin: auto;
+}
+
+/*input[type="radio"] {*/
+/*    scale: 0.5;*/
+/*}*/
+input #male, #female {
+    float: left;
+}
+
+input[type="date"] {
+    font: inherit;
+}
+
+input::placeholder {
+    /*font:inherit;*/
+}

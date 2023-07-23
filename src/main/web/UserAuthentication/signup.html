@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="signup.css">
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Title</title>
+    </head>
+    <body>
+
+        <section class="form">
+            <div class="reg__form__header">
+                <h1>REGISTRATION FORM</h1>
+            </div>
+            <form class="registration__form" action="" method="post">
+
+                <div id="form__input">
+                    <div class="info-class">
+                        <label for="first__name"></label>
+                        <input
+                                id="first__name"
+                                type="text"
+                                placeholder="Name"
+
+                                required/>
+                        <div class="tooltip">
+                            <i class="fa fa-info-circle"></i>
+                            <span class="tooltip__text">First Name</span>
+                        </div>
+                    </div>
+
+                    <div class="info-class">
+                        <label for="middle__name"></label>
+                        <input
+                                id="middle__name"
+                                type="text"
+                                placeholder="Middle Name"
+                                required/>
+                        <div class="tooltip">
+                            <i class="fa fa-info-circle"></i>
+                            <span class="tooltip__text">Middle Name</span>
+                        </div>
+                    </div>
+
+                    <div class="info-class">
+                        <label for="last__name"></label>
+                        <input
+                                id="last__name"
+                                type="text"
+                                placeholder="Last Name"
+                                required/>
+                        <div class="tooltip">
+                            <i class="fa fa-info-circle"></i>
+                            <span class="tooltip__text">Last Name</span>
+                        </div>
+                    </div>
+
+                    <div class="info-class">
+                        <label for="unit"></label>
+                        <input
+                                id="unit"
+                                type="text"
+                                placeholder="Unit / Class"
+                                required/>
+                        <div class="tooltip">
+                            <i class="fa fa-info-circle"></i>
+                            <span class="tooltip__text">Type in: Class for Cadets;
+                                                        Unit for active personnel;
+                                                        Branch for civilians.</span>
+                        </div>
+                    </div>
+                    <div class="info-class">
+
+                        <label for="date__of__acceptance"></label>
+                        <input
+                                id="date__of__acceptance"
+                                type="date"
+                                placeholder="Year of acceptance"
+                                required/>
+
+                        <div class="tooltip">
+                            <i class="fa fa-info-circle"></i>
+                            <span class="tooltip__text">Insert date of acceptance in NMU</span>
+                        </div>
+                    </div>
+
+                    <div class="info-class">
+
+                        <label for="number__in__class"></label>
+                        <input
+                                id="number__in__class"
+                                type="text"
+                                placeholder="Number in class"
+                                required/>
+                        <div class="tooltip">
+                            <i class="fa fa-info-circle"></i>
+                            <span class="tooltip__text">Insert your personal number in class</span>
+                        </div>
+                    </div>
+
+                    <div class="info-class">
+                        <label for="registration__password"></label>
+                        <input
+                                id="registration__password"
+                                type="password"
+                                placeholder="Password..."
+                                required/>
+                        <div class="tooltip">
+                            <i class="fa fa-info-circle"></i>
+                            <span class="tooltip__text">At least 1 symbol, 1 number, 1 lower and 1 upper case letters. Min length - 8 chars.</span>
+                        </div>
+                    </div>
+
+                    <div class="info-class">
+                        <label for="registration__password__confirmation"></label>
+                        <input
+                                id="registration__password__confirmation"
+                                type="password"
+                                placeholder="Confirm password..."
+                                required/>
+                        <div class="tooltip">
+                            <i class="fa fa-info-circle"></i>
+                            <span class="tooltip__text">Confirm your password</span>
+                        </div>
+                    </div>
+                    <div class="info-class">
+
+                        <label for="e-mail"></label>
+                        <input
+                                id="e-mail"
+                                type="email"
+                                placeholder="e-mail"
+                        required/>
+                        <div class="tooltip">
+                            <i class="fa fa-info-circle"></i>
+                            <span class="tooltip__text">Designated NMU e-mail for the individual</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="form__military--category">
+                    <div class="info-class">
+
+                        <label for="category">Category:</label>
+                        <select name="category" id="category" required>
+                            <option value="cadet">Cadet</option>
+                            <option value="officer">Officer</option>
+                            <option value="sergeant">Sergeant</option>
+                            <option value="civilian">Civilian</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <div class="tooltip">
+                            <i class="fa fa-info-circle"></i>
+                            <span class="tooltip__text">Work / study category</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="form__gender">
+                    <div class="info-class">
+
+                        <div id="genders">Sex:</div>
+                        <div class="tooltip">
+                            <i class="fa fa-info-circle"></i>
+                            <span class="tooltip__text"> If other - choose "Male" and write it down in "Additional information" field</span>
+                        </div>
+                    </div>
+
+                    <div class="sex__container">
+                        <label for="male">Male</label>
+                        <input id="male" type="radio" name="Gender" value="male" required/>
+
+                        <label for="female">Female</label>
+                        <input id="female" type="radio" name="Gender" value="female" required/>
+                    </div>
+                </div>
+
+                <div id="form__comments">
+                    <label for="form__text__comments">Additional information:</label>
+                    <textarea
+                            placeholder=""
+                            name="message"
+                            id="form__text__comments"
+                            rows="50"
+                    >
+                </textarea>
+                </div>
+
+                <div id="form__buttons">
+                    <button type="submit"> Submit</button>
+                    <button type="reset"> Reset</button>
+                </div>
+
+            </form>
+        </section>
+    </body>
+
+</html>

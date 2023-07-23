@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Capture it";
+    src: url("../fonts/Capture_it.woff");
+    font-weight: 100;
+}
+
+body, input {
+    font-family: "Capture it", Calibri, sans-serif;
+    letter-spacing: 0.2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.months {
+    background-color: rgba(142, 158, 97, 100%);
+    text-align: center;
+    color: whitesmoke;
+    padding-top: 13px;
+    writing-mode: horizontal-tb;
+    text-orientation: upright;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border-style: solid;
+    border-color:black;
+
+}
+
+#dates {
+    width: 71%;
+    float: right;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(70px, 1fr);
+    /*margin-top: 100px;*/
+    margin-right: 9.5%;
+    /*background-color: cornflowerblue;*/
+    gap: 10px;
+    /*overflow-x: auto;*/
+    overflow: hidden;
+    grid-gap: 16px;
+    padding: 16px;
+    scroll-snap-type: x mandatory;
+    text-align: center;
+
+
+}
+
+#dates span {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+
+    display: grid;
+}
+
+
+.date-container {
+    height: 60px;
+    width: auto;
+    /*background-color: chocolate;*/
+    padding: 3px;
+    text-align: center;
+
+}
+
+/*.date-container:nth-child(14) {*/
+/*    border: 2px solid red;*/
+/*    z-index: +1;*/
+/*    scale: 1;*/
+/*}*/
+
+.current-date {
+    padding-top: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background-color: rgba(142, 158, 97, 80%);
+    color: red;
+    height: 50%;
+    font-size: 1.3rem;
+    /*scale: 1.2;*/
+}
+
+.current-day {
+    padding-left: 6px;
+    padding-right: 6px;
+    font-size: 1.3rem;
+    background-color: white;
+    color: black;
+    height: 50%;
+
+}
+
+.past-date {
+    padding-top: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background-color: rgba(142, 158, 97, 50%);
+    color: cornsilk;
+    height: 50%;
+    font-size: 1.3rem;
+
+}
+
+
+.past-day {
+    padding-left: 6px;
+    padding-right: 6px;
+    background-color: white;
+    color: black;
+    height: 50%;
+    font-size: 1rem;
+}
+
+
+.future-date {
+    padding-top: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+    background-color: #533333;
+    color: cornsilk;
+    height: 50%;
+    font-size: 1.3rem;
+
+}
+
+.future-day {
+    padding-left: 6px;
+    padding-right: 6px;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+    height: 50%;
+}
+
+
+.weekend {
+    padding-left: 6px;
+    padding-right: 6px;
+    font-size: 1.3rem;
+    background-color: white;
+    color: red;
+    height: 50%;
+}
+
+.new-month-date {
+    color: rgba(142, 158, 97, 100%);
+}
+
+
+/*#separator {*/
+/*    height: 60px;*/
+/*    width: 70px;*/
+/*    padding: 3px;*/
+/*    text-align: center;*/
+
+/*    background-color: rgba(142, 158, 97, 40%);*/
+/*    position: absolute;*/
+/*    left: 49.4%;*/
+/*    z-index: 1;*/
+/*}*/
